@@ -119,6 +119,10 @@
             </tr>
         </tbody>
     </table>
-
+    <footer style="margin-top: 40px; padding: 12px 20px; border-top: 2px solid #ddd;
+               font-size: 13px; color: #555; text-align: center; background: #f8f9fa;">
+        <p th:text="'실습 수행 일시: ' + ${#temporals.format(#temporals.createNow(), 'yyyy년 MM월 dd일 (EEE) a hh:mm:ss')} + ' | 학번: 2171259 | 성명: 전준우'"
+           style="margin: 4px 0;"></p>
+    </footer>
 </body>
 </html>

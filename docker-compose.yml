@@ -91,7 +91,7 @@ services:
       # WAR 파일을 Tomcat의 webapps 디렉터리에 마운트합니다.
       # mvn clean package 후 생성된 ROOT.war를 Tomcat이 자동 배포합니다.
       # ROOT.war → ROOT 컨텍스트 → http://localhost:8080/ 로 접속
-      - ./target/ROOT.war:/usr/local/tomcat/webapps/ROOT.war:ro
+      - ./target/ROOT.war:/usr/local/tomcat/webapps/ROOT.war
 
     environment:
       # Java 옵션: 메모리, 인코딩 설정
